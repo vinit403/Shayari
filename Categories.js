@@ -6,21 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 const Categories = ({navigation}) => {
 
     const [users,setUsers] = useState([]);
-    // const catArr = [
-    //     "Attitute",
-    //     "Love",
-    //     "Sad",
-    //     "Bewafa",
-    //     "Dosti",
-    //     "Funny",
-    //     "Romantic",
-    //     "Good Morning",
-    //     "Good Night",
-    //     "Royal",
-    //     "Birthday",
-    //     "Motivational",
-    //     "Miss You"
-    // ];
+
     useEffect(()=>{
         fetch("http://192.168.15.193/demo/Shayari/api_cat.php")
         .then(res => res.json())
